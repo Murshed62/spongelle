@@ -1,0 +1,67 @@
+[
+    {
+        "id":1,
+      "name": "Classic Black Pumps",
+      "img": "https://images.unsplash.com/photo-1535043934128-cf0b28d52f95?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+      "price": 59.99,
+      "details": "Elegant and versatile, these classic black pumps are a wardrobe essential. With a comfortable heel height, they can be dressed up or down for various occasions."
+    },
+    {
+        "id":2,
+      "name": "Athletic Running Shoes",
+      "img": "https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=885&q=80",
+      "price": 79.95,
+      "details": "Designed for comfort and performance, these athletic running shoes feature cushioned soles and breathable materials. Ideal for jogging, gym workouts, or casual walks."
+    },
+    {
+        "id":3,
+      "name": "Stylish Ankle Boots",
+      "img": "https://images.unsplash.com/photo-1534653299134-96a171b61581?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=675&q=80",
+      "price": 89.99,
+      "details": "Step up your fashion game with these stylish ankle boots. Crafted with premium leather and a trendy design, they're perfect for adding a chic touch to your outfits."
+    },
+    {
+        "id":4,
+      "name": "Summer Espadrille Sandals",
+      "img": "https://images.unsplash.com/photo-1546553345-dd110bbaeb06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+      "price": 49.99,
+      "details": "Get ready for summer with these comfortable espadrille sandals. The woven sole and canvas upper create a relaxed and beachy vibe, perfect for warm days."
+    }, 
+    
+    {
+        "id":5,
+        "name": "Strappy High Heels",
+        "img": "https://plus.unsplash.com/premium_photo-1671028365097-104512e9c1a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+        "price": 69.99,
+        "details": "Make a statement with these glamorous strappy high heels. The intricate design and stiletto heel add a touch of sophistication to any evening ensemble."
+      },
+      {
+        "id":6,
+        "name": "Casual Slip-On Sneakers",
+        "img": "https://images.unsplash.com/photo-1494955464529-790512c65305?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80",
+        "price": 44.95,
+        "details": "For a laid-back look, these casual slip-on sneakers are a perfect choice. Easy to wear and versatile, they're great for running errands or meeting friends."
+      },
+      {
+        "id":7,
+        "name": "Elegant Ballet Flats",
+        "img": "https://images.unsplash.com/photo-1519225145634-74cad8193788?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+        "price": 54.99,
+        "details": "Comfort meets style with these elegant ballet flats. Whether you're headed to the office or a brunch date, these flats offer both sophistication and ease."
+      },
+      {
+        "id":8,
+        "name": "Hiking Boots",
+        "img": "https://images.unsplash.com/photo-1493219642556-5084f645ddb4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+        "price": 109.95,
+        "details": "Explore the outdoors in these durable hiking boots. Designed for rugged terrain, they provide ankle support and traction for your outdoor adventures."
+      },
+      {
+        "id":9,
+        "name": "Hiking Boots",
+        "img": "https://images.unsplash.com/photo-1601924638867-3a6de6b7a500?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+        "price": 110.95,
+        "details": "Comfort meets style with these elegant ballet flats. Whether you're headed to the office or a brunch date, these flats offer both sophistication and ease."
+      }
+  
+  ]
