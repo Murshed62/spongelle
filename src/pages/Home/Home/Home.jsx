@@ -14,7 +14,7 @@ const Home = () => {
     },[])
     return (
         <div>
-           <Navbar cartCount={cartCount} setCarts={setCarts}></Navbar>
+           <Navbar></Navbar>
            <Banner></Banner>
 
            <div className='grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-items-center mt-20'>

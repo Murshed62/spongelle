@@ -12,7 +12,7 @@ const Banner = () => {
     return (
         <div>
       <Swiper 
-        style={{maxHeight:"100vh"}}
+        style={{height:"600px"}}
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{

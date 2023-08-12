@@ -5,7 +5,7 @@ import { AiOutlineUser } from "react-icons/ai";
 import AnimatedSearchBar from '../../components/AnimatedSearchBar/AnimatedSearchBar';
 import Checkout from '../../components/Checkout/Checkout';
 
-const Navbar = ({ cartCount, setCarts }) => {
+const Navbar = () => {
   const cartItemsString = localStorage.getItem('cartItems');
   const cartItems = JSON.parse(cartItemsString) || [];
 
