@@ -10,7 +10,7 @@ const AnimatedSearchBar = () => {
   
     const searchBarWidth = expanded ? 'w-32' : 'w-0';
     return (
-        <div className="flex items-center">
+        <div className="flex items-center pt-6">
         <input
           className={`transition-width duration-300 ease-in-out ${searchBarWidth}`}
           type="text"

@@ -13,15 +13,25 @@ const Cart = ({ ct, cartCount, setCartCount }) => {
   }
 
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
-      <figure><img src={img} alt="Shoes" /></figure>
-      <div className="card-body">
-        <h2 className="card-title">{name}</h2>
-        <p>{details}</p>
-        <div className="card-actions justify-end mt-5">
-          <p className='font-bold text-2xl'>${price}</p>
-          <button onClick={() => handleIncrease({ id, name, img, details, price })} className="btn btn-primary">Add to cart</button>
+    <div className="md:flex mb-6 ">
+      <div className="card relative w-full md:w-80 bg-white rounded-lg overflow-hidden transform transition-transform hover:scale-105 hover:shadow-xl shadow-md">
+        <figure>
+          <img src={img} alt="Shoes" className="w-full h-40 object-cover" />
+        </figure>
+        <div className="p-4">
+          <h2 className="text-lg font-semibold mb-2">{name}</h2>
+          <p className="text-sm text-gray-600 mb-4">{details}</p>
+          <div className="flex items-center justify-between">
+            <p className="font-bold text-lg">${price}</p>
+            <button
+              onClick={() => handleIncrease({ id, name, img, details, price })}
+              className="btn bg-orange-400 hover:bg-orange-500 text-white font-bold px-4 py-2"
+            >
+              Add to cart
+            </button>
+          </div>
         </div>
+
       </div>
       <Toaster />
     </div>

@@ -1,18 +1,20 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { BsFillHandbagFill } from "react-icons/bs";
 import { AiOutlineUser } from "react-icons/ai";
 import AnimatedSearchBar from '../../components/AnimatedSearchBar/AnimatedSearchBar';
-import Checkout from '../../components/Checkout/Checkout';
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const cartItemsString = localStorage.getItem('cartItems');
   const cartItems = JSON.parse(cartItemsString) || [];
 
-
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
-    <div className="navbar bg-base-100 mx-auto mt-5">
+    <div className={`navbar ${isMenuOpen ? 'open' : ''} my-5`}>
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -30,24 +32,30 @@ const Navbar = () => {
             <li><a>Item 3</a></li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl"><img width={250} src="https://spongelle.com/cdn/shop/files/Wordmark_7577afa4-af32-49bb-ba53-0659c39a91da.png?v=1672230712&width=500" alt="" /></a>
+        <a className="btn btn-ghost normal-case text-xl">
+          <img width={200} src="https://spongelle.com/cdn/shop/files/Wordmark_7577afa4-af32-49bb-ba53-0659c39a91da.png?v=1672230712&width=500" alt="" />
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 text-2xl">
-          <li><Link>New</Link></li>
-          <li><Link>Best Sellers</Link></li>
-          <li><Link>Bach & Body</Link></li>
-          <li><Link>Shop By Collection</Link></li>
-          <li><Link>Gifts</Link></li>
-          <li><Link>Sale</Link></li>
-          <li><Link>Fragrance Quiz</Link></li>
-          <li><Link><AnimatedSearchBar></AnimatedSearchBar></Link></li>
-          <li><Link><AiOutlineUser /></Link></li>
-          <li><Link to="/checkout"> <BsFillHandbagFill className='text-2xl' /><span className=' text-2xl'><span style={{ fontSize: "20px" }}>{cartItems.length}</span></span></Link></li>
+        <ul className="menu-horizontal px-1 text-[18px] items-center">
+          <li><Link className="menu-item">New</Link></li>
+          <li><Link className="menu-item">Best Sellers</Link></li>
+          <li><Link className="menu-item">Bach & Body</Link></li>
+          <li><Link className="menu-item">Shop By Collection</Link></li>
+          <li><Link className="menu-item">Gifts</Link></li>
+          <li><Link className="menu-item">Sale</Link></li>
+          <li><Link className="menu-item me-2">Fragrance Quiz</Link></li>
+          <li><Link className='me-12'><AnimatedSearchBar /></Link></li>
+          <li><Link className='me-10'><AiOutlineUser className='text-2xl mt-5' /></Link></li>
+          <li>
+            <Link className='me-12 flex' to="/checkout">
+              <BsFillHandbagFill className='text-[23px] shopping-bag-icon animated-bag' />
+              <span className='cart-items-count animated-cart'>{cartItems.length}</span>
+            </Link>
+          </li>
 
         </ul>
       </div>
-
     </div>
   );
 };

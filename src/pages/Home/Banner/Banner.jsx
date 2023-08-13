@@ -10,27 +10,29 @@ import banner1 from '../../../assets/banner.jpg';
 
 const Banner = () => {
     return (
-        <div>
-      <Swiper 
-        style={{height:"600px"}}
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+      <div className="swiper-container">
+      <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+          }}
+          pagination={{
+              clickable: true,
+          }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="mySwiper"
       >
-        <SwiperSlide><img src="https://spongelle.com/cdn/shop/files/homepage_banner_desktop-1_2000x.png?v=1680277357" alt="" /></SwiperSlide>
-        <SwiperSlide><img src={banner1} alt="" /></SwiperSlide>
-       
+          <SwiperSlide>
+              <img src="https://spongelle.com/cdn/shop/files/homepage_banner_desktop-1_2000x.png?v=1680277357" alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+              <img src={banner1} alt="" />
+          </SwiperSlide>
       </Swiper>
-    </div>
+  </div>
     );
 };
 

@@ -9,3 +9,68 @@
     background-size: cover;
     min-height: 100vh;
 }
+
+.menu-item {
+    position: relative;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-left: 30px;
+    font-weight: 700;
+  }
+  
+  .menu-item::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: width 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    color: #ff9900; 
+  }
+  
+  .menu-item:hover::before {
+    width: 100%;
+    background-color: #ff9900; 
+  }
+
+  @keyframes colorPulse {
+    0% {
+      color: #ff9900;
+    }
+    50% {
+      color: #ff5500;
+    }
+    100% {
+      color: #ff9900;
+    }
+  }
+  
+  .animated-bag {
+    animation: colorPulse 2s infinite;
+  }
+  
+  .animated-cart {
+    animation: colorPulse 2s infinite reverse;
+  }
+
+.swiper-container {
+    height: 600px; 
+}
+
+@media (max-width: 767px) {
+    .swiper-container {
+        height: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .swiper-container {
+        height: 300px;
+    }
+}
